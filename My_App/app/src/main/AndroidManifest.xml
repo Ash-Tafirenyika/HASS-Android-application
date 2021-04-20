@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.my_app">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_INSTALLED_PACKAGES" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackgup,UnusedAttribute"
+        android:allowBackup="true">
+        <activity android:name=".Options" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".PrieviewTestVideo" />
+        <activity android:name=".ViewTestResults" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity">
+
+        </activity>
+        <activity android:name=".SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VerifyDriverInfo" />
+        <activity android:name=".ConfirmDetails" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+    </application>
+
+</manifest>

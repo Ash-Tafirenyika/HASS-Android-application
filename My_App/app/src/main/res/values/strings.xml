@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">HASS Automated Driver Test</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="driver_token">DRIVER TOKEN</string>
+    <string name="verify_driver_information">VERIFY DRIVER INFO</string>
+    <string name="vehicle_id">VEHICLE ID</string>
+    <string name="class_type">CLASS TYPE</string>
+    <string name="gender">GENDER</string>
+    <string name="token">TOKEN</string>
+    <string name="verify">VERIFY</string>
+    <string name="licence_number">LICENCE NUMBER</string>
+    <string name="book_date">BOOK DATE</string>
+    <string name="autonomous_learner_driver_system">Automated Learner Driver Licence Testing System</string>
+    <string name="trouble_logging">TROUBLE LOGGING?</string>
+    <string name="login">LOGIN.....</string>
+    <string name="driver_name">DRIVER NAME</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="driver_id">DRIVER ID</string>
+    <string name="stop">STOP</string>
+    <string name="view_results">view results</string>
+    <string name="view_test_video">View Test Video</string>
+    <string name="get_results">Get results</string>
+    <string name="perfom_test">perfom test</string>
+    <string name="already_an_account">Already have an account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="taskid1">Task ID</string>
+    <string name="task_score">Task score</string>
+    <string name="change_quality">Change quality</string>
+    <string name="todo">TODO</string>
+    <string name="fullstop">.</string>
+    <string name="longitude">longitude</string>
+</resources>

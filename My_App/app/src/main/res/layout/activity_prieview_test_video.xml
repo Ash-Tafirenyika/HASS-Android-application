@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".VerifyDriverInfo"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tokenNumVid"
+                android:layout_width="201dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="@string/token"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:targetApi="jelly_bean" />
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+            <VideoView
+                android:id="@+id/TestvideoView"
+                android:layout_width="match_parent"
+                android:layout_height="547dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/Stop"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="278dp"
+                android:layout_height="54dp"
+                android:background="#00BCD4"
+                android:text="@string/stop"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGender"
+                app:layout_constraintVertical_bias="0.306" />
+
+            <TextView
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center_horizontal"
+                android:text="@string/autonomous_learner_driver_system"
+                android:textColor="#F8F5F5"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

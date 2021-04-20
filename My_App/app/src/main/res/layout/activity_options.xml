@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040404"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:layout_width="98dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:background="#070707"
+                app:srcCompat="@drawable/option"
+                tools:ignore="ContentDescription"
+                tools:layout_editor_absoluteX="177dp"
+                tools:layout_editor_absoluteY="128dp"
+
+                tools:srcCompat="@drawable/option" />
+
+            <TextView
+                android:id="@+id/confirmView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="@string/todo"
+                android:textColor="#FBFBFB"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteY="220dp"
+                tools:targetApi="jelly_bean" />
+
+            <Button
+                android:id="@+id/PerfomTest"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="285dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="80dp"
+                android:background="#00BCD4"
+                android:text="@string/perfom_test"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/testState"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/viewResults"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="285dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#00BCD4"
+                android:enabled="true"
+                android:text="@string/view_results"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonPause"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:gravity="center_horizontal"
+                android:text="@string/autonomous_learner_driver_system"
+                android:textColor="#F8F6F6"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/buttonStopTest"
+                app:layout_constraintVertical_bias="0.936" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

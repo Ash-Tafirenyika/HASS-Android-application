@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070707"
+    tools:context=".VerifyDriverInfo"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="98dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="#070707"
+                app:srcCompat="@drawable/result"/>
+
+            <TextView
+                android:id="@+id/DriverID"
+                android:layout_width="204dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="@string/driver_id"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="30sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="328dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:duplicateParentState="true"
+                android:enabled="true"
+                android:gravity="center"
+
+                android:hint="@string/token"
+                android:textColorHint="#F60404">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/token"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:textColor="#FA0606"
+                    android:drawableRight="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/taskid1"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginLeft="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskID1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FAF6F6"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawableLeft="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="33dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/task_score"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginRight="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskScore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FFFFFF"
+                    android:drawableRight="@drawable/ic_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/taskid1"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginLeft="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskID2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FAF6F6"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawableLeft="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="33dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/task_score"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginRight="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskScore2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FFFFFF"
+                    android:drawableRight="@drawable/ic_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/taskid1"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginLeft="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskID3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FAF6F6"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawableLeft="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="33dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/task_score"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginRight="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskScore3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FFFFFF"
+                    android:drawableRight="@drawable/ic_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/taskid1"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginLeft="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskID4"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FAF6F6"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawableLeft="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="33dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/task_score"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginRight="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskScore4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FFFFFF"
+                    android:drawableRight="@drawable/ic_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/taskid1"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginLeft="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskID5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_username"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FAF6F6"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_username"
+                    android:drawableLeft="@drawable/ic_username" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="166dp"
+                android:layout_height="59dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="33dp"
+                android:duplicateParentState="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/task_score"
+                android:textColorHint="#F8F5F5"
+                android:layout_marginRight="33dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TaskScore5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_date"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#FFFFFF"
+                    android:drawableRight="@drawable/ic_date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonGetToken"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="322dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#00BCD4"
+                android:text="@string/get_results" />
+
+            <Button
+                android:id="@+id/buttonViewVid"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="311dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#00BCD4"
+                android:text="@string/view_test_video"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center_horizontal"
+                android:text="@string/autonomous_learner_driver_system"
+                android:textColor="#F8F5F5"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="204dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:text="@string/driver_id"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
